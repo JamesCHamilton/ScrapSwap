@@ -1,0 +1,136 @@
+import { type Recipe, type WasteListing } from "@/lib/types";
+
+export const wasteListings: WasteListing[] = [
+  {
+    id: "w1",
+    title: "Spent coffee grounds",
+    materialType: "Organic",
+    condition: "Clean / Dry",
+    industrySource: "Food & Beverage",
+    location: "Brooklyn, NY",
+    weightLbs: 50,
+    tags: ["coffee", "grounds", "dry"],
+  },
+  {
+    id: "w2",
+    title: "Orange peels (zest + rind)",
+    materialType: "Organic",
+    condition: "Wet",
+    industrySource: "Food Processing",
+    location: "Queens, NY",
+    weightLbs: 80,
+    tags: ["citrus", "peels", "pulp"],
+  },
+  {
+    id: "w3",
+    title: "Denim offcuts (indigo)",
+    materialType: "Textile",
+    condition: "Clean / Dry",
+    industrySource: "Apparel Manufacturing",
+    location: "Jersey City, NJ",
+    weightLbs: 120,
+    tags: ["denim", "cotton", "offcuts"],
+  },
+  {
+    id: "w4",
+    title: "Poly mailers (post-consumer)",
+    materialType: "Plastic",
+    condition: "Mixed",
+    industrySource: "E-commerce",
+    location: "Newark, NJ",
+    weightLbs: 65,
+    tags: ["LDPE", "mailers", "film"],
+  },
+  {
+    id: "w5",
+    title: "Cotton scrap rolls",
+    materialType: "Textile",
+    condition: "Clean / Dry",
+    industrySource: "Textile Mill",
+    location: "Paterson, NJ",
+    weightLbs: 200,
+    tags: ["cotton", "scraps", "rolls"],
+  },
+  {
+    id: "w6",
+    title: "HDPE bottle caps (sorted)",
+    materialType: "Plastic",
+    condition: "Clean / Dry",
+    industrySource: "Beverage",
+    location: "Bronx, NY",
+    weightLbs: 40,
+    tags: ["HDPE", "caps", "sorted"],
+  },
+];
+
+export const recipes: Recipe[] = [
+  {
+    slug: "coffee-grounds-composite",
+    title: "Coffee Grounds Composite Tiles",
+    category: "Furniture",
+    summary:
+      "Bind spent coffee grounds with a bio-resin to create small coasters or tile-like panels.",
+    time: "2–3 hours",
+    difficulty: "Medium",
+    materials: ["Spent coffee grounds", "Bio-resin", "Silicone mold", "Press/clamps"],
+    steps: [
+      "Dry grounds fully to reduce moisture.",
+      "Mix grounds with resin until evenly coated.",
+      "Pack into molds and press to remove voids.",
+      "Cure per resin instructions; sand edges.",
+    ],
+    suitableFor: ["Organic"],
+  },
+  {
+    slug: "orange-peel-bioleather",
+    title: "Orange Peel Bio-Leather Sheet",
+    category: "Bio-materials",
+    summary:
+      "Turn citrus waste into a flexible sheet suitable for small accessories and prototypes.",
+    time: "4–6 hours",
+    difficulty: "Advanced",
+    materials: ["Orange peels", "Glycerin", "Vinegar", "Blender", "Dehydrator/oven"],
+    steps: [
+      "Blend peels into a smooth pulp.",
+      "Simmer with glycerin and a splash of vinegar.",
+      "Spread thinly onto a lined tray.",
+      "Dry low and slow; peel off and condition.",
+    ],
+    suitableFor: ["Organic"],
+  },
+  {
+    slug: "denim-acoustic-panels",
+    title: "Denim Acoustic Panel Stuffing",
+    category: "Textiles",
+    summary:
+      "Shred denim scraps and pack into frames to create sound-dampening wall panels.",
+    time: "1–2 hours",
+    difficulty: "Easy",
+    materials: ["Denim scraps", "Wood frame", "Fabric cover", "Staple gun"],
+    steps: [
+      "Cut/shred denim into consistent strips.",
+      "Fill frame evenly for uniform density.",
+      "Cover with fabric and staple tight.",
+      "Mount panels; test room response.",
+    ],
+    suitableFor: ["Textile"],
+  },
+  {
+    slug: "plastic-mailer-fused-fabric",
+    title: "Fused Plastic Mailer Fabric",
+    category: "Accessories",
+    summary:
+      "Fuse layers of clean mailers into a durable sheet for pouches and straps.",
+    time: "45–60 minutes",
+    difficulty: "Medium",
+    materials: ["Plastic mailers", "Parchment paper", "Iron/heat press", "Scissors"],
+    steps: [
+      "Clean and dry mailers; cut into flat sheets.",
+      "Layer between parchment; apply heat gradually.",
+      "Flip and fuse until consistent thickness.",
+      "Trim edges and sew into accessories.",
+    ],
+    suitableFor: ["Plastic"],
+  },
+];
+
